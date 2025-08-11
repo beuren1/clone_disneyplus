@@ -26,18 +26,15 @@
 
             &:last-child {
                 margin-top: 60px;
-                
             }
         }
 
         &__combos {
-            
             display: flex;
             justify-content: space-between;
 
-            &__combo{
+            &__combo {
                 width: calc(50% - 12px);
-        
 
                 img {
                     max-width: 60px;
@@ -55,7 +52,6 @@
                     margin-top: 2vw;
                     margin-bottom: 8px;
                 }
-
             }
         }
     }
