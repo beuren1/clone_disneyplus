@@ -12,6 +12,10 @@
         justify-content: space-around;
         margin-top: 50px;
 
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         &__item {
             text-align: center;
             max-width: 380px;
@@ -19,7 +23,7 @@
             padding: 60px 44px 44px;
             
             &:nth-child(2) {
-                background-image: url(../images/fundo_combo_plus.png);
+                background-image: url(..);
                 background-repeat: no-repeat;
                 background-size: contain;
             }

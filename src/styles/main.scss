@@ -1,8 +1,12 @@
+@use 'sass:color';
 @use 'variaveis';
-@use 'hero';
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
+@use 'hero';
+@use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -21,6 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body {
@@ -40,26 +45,53 @@ body {
 
 .text--big {
     @include text(18px);
+
+       @media (max-width: 768)
+      {
+       @include text(15px);
+    }
 }
 
 .text {
     @include text;
+
+       @media (max-width: 768)
+      {
+       @include text(14px);
+    }
 }
 
 .text--small {
     @include text(12px);
+
+       @media (max-width: 768)
+      {
+       @include text(11px);
+    }
 }
 
 .title--big {
     @include title(44px);
+     @media (max-width: 768) {
+       @include title (26px);
+    }
 }
 
 .title {
     @include title;
+
+     @media (max-width: 768)
+      {
+       @include title (24px);
+    }
+
 }
 
 .title--small {
     @include title(28px);
+     @media (max-width: 768) {
+       @include title (22px);
+    }
 }
 
 .link-text {
@@ -69,24 +101,56 @@ body {
 }
 
 .button {
-                    display: block;
-                    width: 100%;
-                    height: 60px;
-                    font-size: 18px;
-                    color: variaveis.$corTextoSecundario;
-                    background-color: #6421ff;
-                    text-transform: uppercase;
-                    border-radius: 4px;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
-                
-            }
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
-            .image-text-section {
+    &:hover {
+        background-color: color.adjust(variaveis.$corDeFundoBotaoPrimario, $lightness: 3%);
+    }
+
+    &--secondary {
+        background-color: variaveis.$corDeFundoSecundario;
+        border-color: variaveis.$corDeFundoSecundario;
+
+        &:hover {
+            background-color: color.adjust(variaveis.$corDeFundoSecundario, $lightness: 3%);
+        }
+    }
+
+    &--dark {
+        background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
+        border-color: variaveis.$corDeFundoSecundario;
+
+        &:hover {
+            background-color: variaveis.$corDeFundoSecundario;
+            color: variaveis.$corTextoSecundario;
+        }
+    }
+}
+
+.image-text-section {
     padding: 5.6vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    
+
+    @media (max-width: 768) {
+        display: block;
+    }
 
     img {
         max-width: 100%;
@@ -100,23 +164,30 @@ body {
         }
     }
 
-        &--image-full-width {
-            display: block;
-            position: relative;
-            
-            img {
-                width: 100%;
-            }
-
-             &__text_container {
-                position: absolute;
-                top: 0;
-                left: 50%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: calc(50% - 5.6vw);
-             }
+    &--image-full-width {
+        display: block;
+        position: relative;
+        
+        img {
+            width: 100%;
         }
+
+        &__text_container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: calc(50% - 5.6vw);
+
+             @media (max-width: 768) {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+        }
+    }
 }

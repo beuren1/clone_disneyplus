@@ -7,84 +7,89 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
+    <header class="header">
+        <div class="header__container">
+            <h1 class="" >
+                <img class="header__logo" src="./dist/images/logo hp.png" alt="">
             </h1>
-            <h3 class="title--small">As melhores histórias em um só lugar.</h3>
-            <p>
-                <a href="#" class="link-text">Assinar disney+</a><br>
-                <span class="text">R$ 27,99/mês ou R$ 279,99/ano à vista*</span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="">
-                    <button class="button">ASSINE AGORA</button>
-                    <span class="text">R$45,99/mês*</span>
+            <ul class="header__links">
+                <li class="header__links__item ">
+                    <a href="#" class="button button--secondary">Assine Agora</a>
                 </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="">
-                    <button class="button">ASSINE AGORA</button>
-                    <span class="text">R$45,99/mês*</span>
+                  <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
                 </li>
             </ul>
-            <p class="text--small">*O preço pode variar caso a assinatura</p>
+        </div>
+        
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+           
+          
+      
+            
         </div>
     </section>
 
     <section class="shows">
         <nav class="shows__tab">
-            <button data-tab-button="em_breve" class="shows__tab__button shows__tab__button--is-active">Em breve</button>
-            <button data-tab-button="populares" class="shows__tab__button">Mais populares</button>
-            <button data-tab-button="star_plus" class="shows__tab__button">Mais no star+</button>
+            <button data-tab-button="em_breve" class="shows__tab__button shows__tab__button--is-active">Filmes</button>
+            <button data-tab-button="populares" class="shows__tab__button">Personagens</button>
+            <button data-tab-button="star_plus" class="shows__tab__button">Elenco</button>
         </nav>
 
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
-            <li class="shows__list__item"><img src="dist/images/em_breve/spidey.jpg" alt="spidey"></li>
-            <li class="shows__list__item"><img src="dist/images/em_breve/spidey.jpg" alt="spidey"></li>
-            <li class="shows__list__item"><img src="dist/images/em_breve/spidey.jpg" alt="spidey"></li>
-            <li class="shows__list__item"><img src="dist/images/em_breve/spidey.jpg" alt="spidey"></li>
-            <li class="shows__list__item"><img src="dist/images/em_breve/spidey.jpg" alt="spidey"></li>
-            <li class="shows__list__item"><img src="dist/images/em_breve/spidey.jpg" alt="spidey"></li>
+            <li class="shows__list__item"><img src="dist/images/pedra filosafal.jpeg" alt="spidey"></li>
+            <li class="shows__list__item"><img src="dist/images/camara.jpeg" alt="spidey"></li>
+            <li class="shows__list__item"><img src="dist/images/prisioneiro.jpeg" alt="spidey"></li>
+            <li class="shows__list__item"><img src="dist/images/calice.jpeg" alt="spidey"></li>
+            <li class="shows__list__item"><img src="dist/images/reliquias 1.jpeg" alt="spidey"></li>
+            <li class="shows__list__item"><img src="dist/images/reliquias 3.jpeg" alt="spidey"></li>
         </ul>
 
         <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item"><img src="dist/images/mais_populares/obi_wan.jpg" alt="obi"></li>
-            <!-- ...outros itens -->
+             <li class="shows__list__item"><img src="dist/images/harry.jpeg" alt="obi"></li>
+              <li class="shows__list__item"><img src="dist/images/herm.jpeg" alt="obi"></li>
+               <li class="shows__list__item"><img src="dist/images/ronny.jpeg" alt="obi"></li>
+                <li class="shows__list__item"><img src="dist/images/voldemort.jpeg" alt="obi"></li>
+                 <li class="shows__list__item"><img src="dist/images/dombledore.jpeg" alt="obi"></li>
         </ul>
 
         <ul data-tab-id="star_plus" class="shows__list">
-            <li class="shows__list__item"><img src="dist/images/mais_no_star_plus/libertadores.jpg" alt="libertadores"></li>
-            <!-- ...outros itens -->
+            <li class="shows__list__item"><img src="dist/images/trio.jpeg" alt="libertadores"></li>
+            <li class="shows__list__item"><img src="dist/images/snpe.jpeg" alt="libertadores"></li>
+            <li class="shows__list__item"><img src="dist/images/dombledore2.jpeg" alt="libertadores"></li>
+            <li class="shows__list__item"><img src="dist/images/hermione 2.jpeg" alt="libertadores"></li>
+            <li class="shows__list__item"><img src="dist/images/rac.jpeg" alt="libertadores"></li>
         </ul>
     </section>
     <section class="plans">
-    <h2 class="title--big">Escolha seu plano</h2>
+    <h2 class="title--big">Indicados para o Oscar</h2>
     <ul class="plans__list">
         <li class="plans__list__item">
-            <img src="./dist/images/logos/disneyplus_underline.png" alt="">
-            <strong class="title--small">R$ 30,90/MÊS*</strong>
+            <img src="./dist/images/pedra filosafal.jpeg" alt="">
+            
             <p class="text--big">
                 lakajs idjjias jaidjdko jiwqiqwij jsdji jsdjiasdko
             </p>
-            <button class="button">Assine Agora</button>
+            <button class="button">Pedra filosofal</button>
         </li>
         <li class="plans__list__item">
-            <img src="./dist/images/logos/disney_star_plus_sm.png" alt="">
-            <strong class="title--small">R$ 30,90/MÊS*</strong>
+            <img src="./dist/images/pedra filosafal.jpeg" alt="">
+        
             <p class="text--big">
                 lakajs idjjias jaidjdko jiwqiqwij jsdji jsdjiasdko
             </p>
-            <button class="button">Assine Agora</button>
+            <button class="button">Assista Agora</button>
         </li>
         <li class="plans__list__item">
-            <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="">
-            <strong class="title--small">R$ 30,90/MÊS*</strong>
+            <img src="./dist/images/calice.jpeg" alt="">
+            
             <p class="text">
                 lakajs idjjias jaidjdko jiwqiqwij jsdji jsdjiasdko
             </p>
-            <button class="button">Assine Agora</button>
+            <button class="button">Assista Agora</button>
         </li>
       
     </ul>
@@ -93,22 +98,75 @@
         </p>
 </section>
 <section class="image-text-section">
-    <img src="./dist/images/tv_pc_tablet_celular.png" alt="">
+    <img src="./dist/images/pedra filosafal.jpeg" alt="">
     <div class="image-text-section__text_container">
-        <h2 class="title">Assista do seu Jeito</h2>
+        <h2 class="title">Pedra filosofal</h2>
         <p class="text--big">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ex odio, ea placeat commodi, natus quae reprehenderit quo dignissimos quos blanditiis dolor perferendis cumque quam incidunt sed neque quisquam sit!
+            Harry Potter descobre, aos 11 anos, que é um bruxo e recebe um convite para estudar em Hogwarts, a escola de magia. Lá faz amizade com Rony e Hermione, e descobre seu passado ligado à morte dos pais. Juntos, eles enfrentam desafios para impedir que Voldemort volte ao poder através da misteriosa Pedra Filosofal.
         </p>
     </div>
 </section>
-<section class="image-text-section--image-full-width">
-    <img src="./dist/images/fundo_rei_leao.png" alt="">
-    <div class="image-text-section--image-full-width__text_container">
-        <h2 class="title">Baixe filmes e series</h2>
+<section class="image-text-section">
+    <img src="./dist/images/camara.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">Camara secreta</h2>
         <p class="text--big">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ex odio, ea placeat commodi, natus quae reprehenderit quo dignissimos quos blanditiis dolor perferendis cumque quam incidunt sed neque quisquam sit!
-        </p>
+No segundo ano em Hogwarts, estranhos ataques petrificam alunos e espalham o medo. Harry descobre que a Câmara Secreta foi reaberta e que uma criatura mortal ameaça a escola. Com a ajuda de seus amigos, enfrenta o Basilisco e o diário de Tom Riddle, versão jovem de Voldemort.        </p>
     </div>
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/prisioneiro.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">O prisioneiro de askabam</h2>
+        <p class="text--big">
+No terceiro ano, Harry descobre que Sirius Black, um prisioneiro fugitivo de Azkaban, aparentemente está atrás dele. Mas a verdade é bem diferente: Sirius é seu padrinho e aliado. Com a ajuda de Hermione e um Vira-Tempo, Harry descobre mais sobre o passado de seus pais, os Marotos, e enfrenta os temidos Dementadores.    </div>
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/calice.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">Calice de fogo</h2>
+        <p class="text--big">
+No quarto ano, Hogwarts sedia o Torneio Tribruxo, competição entre escolas de magia. Inesperadamente, o nome de Harry é escolhido pelo Cálice de Fogo. Ele enfrenta provas mortais e, no final, presencia o retorno de Voldemort em corpo físico, marcando o início da guerra bruxa.
+        </div>
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/ordem.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">Harry Potter e a Ordem da Fênix</h2>
+        <p class="text--big">
+O Ministério da Magia se recusa a acreditar no retorno de Voldemort e envia Dolores Umbridge para controlar Hogwarts. Harry, desacreditado, cria a Armada de Dumbledore para ensinar defesa real aos alunos. O filme culmina na batalha no Departamento de Mistérios, revelando a profecia que liga Harry a Voldemort e trazendo a dolorosa perda de Sirius Black.    </div>
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/principe.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">Harry Potter e a Ordem da Fênix</h2>
+        <p class="text--big">
+O Ministério da Magia se recusa a acreditar no retorno de Voldemort e envia Dolores Umbridge para controlar Hogwarts. Harry, desacreditado, cria a Armada de Dumbledore para ensinar defesa real aos alunos. O filme culmina na batalha no Departamento de Mistérios, revelando a profecia que liga Harry a Voldemort e trazendo a dolorosa perda de Sirius Black.    </div>
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/reliquias 1.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">Harry Potter e o Enigma do Príncipe</h2>
+        <p class="text--big">
+Dumbledore mostra a Harry memórias do passado de Voldemort, incluindo as pistas sobre as Horcruxes, objetos que contêm partes da alma do bruxo. Enquanto isso, Draco Malfoy recebe uma missão perigosa e Snape faz o Voto Perpétuo. O filme termina de forma trágica com a morte de Dumbledore na Torre de Astronomia.</section>
+
+
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/reliquis2.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">🪄 Harry Potter e as Relíquias da Morte – Parte 1</h2>
+        <p class="text--big">
+Harry, Rony e Hermione abandonam Hogwarts para caçar as Horcruxes de Voldemort. Nessa jornada sombria, enfrentam perigos, descobrem a lenda das Relíquias da Morte e sofrem com perdas dolorosas, como a de Dobby. O filme termina com Voldemort tomando posse da Varinha das Varinhas.
+
+</section>
+<section class="image-text-section">
+    <img src="./dist/images/pedra filosafal.jpeg" alt="">
+    <div class="image-text-section__text_container">
+        <h2 class="title">Harry Potter e as Relíquias da Morte – Parte 2</h2>
+        <p class="text--big">
+A guerra atinge seu ápice em Hogwarts, onde bruxos e alunos resistem ao ataque de Voldemort e seus Comensais da Morte. Harry descobre sua ligação com Voldemort e se sacrifica, mas retorna para a batalha final. Com a ajuda de seus amigos, o Lorde das Trevas é derrotado de uma vez por todas.
+
 </section>
 <section class="available-devices">
     <h2 class="title">Disponivel em todos os aparelhos</h2>
@@ -151,6 +209,51 @@
         </li>
     </ul>
 </section>
+<section class="faq">
+    <h2 class="title">Perguntas Frequentes</h2>
+    <ul class="faq__questions">
+        <li class="faq__questions__item ">
+            <div class="faq__questions__item__question" data-faq-question="">Quem escreveu os livros de HP?</div>
+            <div class="faq__questions__item__answer text--big">A escritora britanica J.K.Rolling</div>
+        </li>
+        <li class="faq__questions__item ">
+            <div class="faq__questions__item__question" data-faq-question>Harry potter ja ganhou algum oscar?</div>
+            <div class="faq__questions__item__answer  text--big">A saga Harry Potter nunca venceu um Oscar, mas vários filmes foram indicados em categorias técnicas.</div>
+        </li>
+        <li class="faq__questions__item ">
+            <div class="faq__questions__item__question" data-faq-question>Quatos filmes tem a saga?</div>
+            <div class="faq__questions__item__answer  text--big">Tem 7 filmes no total.</div>
+        </li>
+    </ul>
+</section>
+<footer class="footer">
+    <div class="footer__container">
+        <img class="footer__logo" src="./dist/images/logo hp.png" alt="">
+        <ul class="footer__links">
+            <li class="footer__links__item">
+              <div class="language-selector">
+                  <img src="./dist/images/icones/globe.svg" alt="">
+                <select>
+                    <option>english</option>
+                    <option selected>portugues</option>
+                </select>
+              </div>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Termos e condições de uso</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Política e privacidade</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Anúncios</a>
+            </li>
+        </ul>
+        <p class="text--small">
+            *Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsa repellendus optio itaque provident nesciunt recusandae! Deleniti iusto praesentium enim id natus voluptatem exercitationem pariatur eos molestiae, distinctio voluptatibus similique!
+        </p>
+        <p class="text--small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum quisquam culpa vitae odit voluptates doloribus error dolorem? Ut nobis explicabo in dolor
 
 
     <script src="./src/main.js"></script>
