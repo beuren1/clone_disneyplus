@@ -63,3 +63,30 @@ function exibeElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
 }
+
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const imagemin = require("gulp-imagemin");
+
+// === Task: HTML ===
+gulp.task("html", function () {
+  return gulp.src("src/*.html")   // pega os .html da pasta src
+    .pipe(gulp.dest("dist"));     // joga na pasta dist
+});
+
+// === Task: Styles (SCSS/CSS) ===
+gulp.task("styles", function () {
+  return gulp.src("src/scss/**/*.scss")   // ajusta o caminho se necessário
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(gulp.dest("dist/css"));
+});
+
+// === Task: Images ===
+gulp.task("images", function () {
+  return gulp.src("src/images/**/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("dist/images"));
+});
+
+// === Task Default ===
+gulp.task("default", gulp.parallel("html", "styles", "images"));
